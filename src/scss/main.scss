@@ -1,0 +1,39 @@
+@import "_variables";
+@import "_mixins";
+*{
+	margin:0;
+	padding: 0;
+	@include border-box;
+}
+
+.header__logo {
+	background-image: url(../img/logo-tall.svg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 55px;
+}
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	.item{
+		padding: 5px;
+		margin-bottom: 4px;
+		color: $text-color;
+		background-color: $secondary-dark;
+	}
+	.item-active{
+		padding: 5px;
+		margin-bottom: 4px;
+		color: $text-color;
+		background-color: $primary-light;
+	}
+}
+
+footer{
+	color: $text-color;
+	background-color: $secondary-dark;
+	.center{
+		text-align: center;
+	}
+}

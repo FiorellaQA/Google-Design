@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.header__logo {
+  background-image: url(../img/logo-tall.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 55px; }
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto; }
+  .wrapper .item {
+    padding: 5px;
+    margin-bottom: 4px;
+    color: #FFF;
+    background-color: #3E3F40; }
+  .wrapper .item-active {
+    padding: 5px;
+    margin-bottom: 4px;
+    color: #FFF;
+    background-color: #EBB85D; }
+
+footer {
+  color: #FFF;
+  background-color: #3E3F40; }
+  footer .center {
+    text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
