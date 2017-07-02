@@ -5,31 +5,229 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  font-family: 'Roboto', sans-serif; }
+
 .header__logo {
+  width: 100%;
   background-image: url(../img/logo-tall.svg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: contain;
   height: 55px; }
 
+.alignFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+ul {
+  list-style-type: none;
+  overflow: hidden; }
+  ul li {
+    float: left; }
+    ul li a {
+      font-size: 13px;
+      color: #414549;
+      font-weight: 500;
+      text-transform: uppercase;
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      border-bottom: 4px solid rgba(212, 210, 210, 0); }
+      ul li a:hover {
+        border-bottom: 4px solid rgba(212, 210, 210, 0.78); }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.imgSection {
+  background-image: url(../img/Method_Podcast_E1_Jay_Wong_.max-4000x2000.jpegquality-90.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
 .wrapper {
   width: 100%;
   margin: 0 auto; }
-  .wrapper .item {
-    padding: 5px;
-    margin-bottom: 4px;
-    color: #FFF;
-    background-color: #3E3F40; }
-  .wrapper .item-active {
-    padding: 5px;
-    margin-bottom: 4px;
-    color: #FFF;
-    background-color: #EBB85D; }
 
 footer {
   color: #FFF;
   background-color: #3E3F40; }
   footer .center {
     text-align: center; }
+
+.featured-content {
+  float: left;
+  min-height: 1px;
+  width: 66.665%;
+  padding: 0;
+  text-align: left;
+  color: #424242;
+  margin-top: 27px; }
+
+.featured--title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 23px;
+  letter-spacing: .4px; }
+
+.featured--subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 28px;
+  margin-bottom: 23px; }
+
+.featured--content {
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 96px;
+  line-height: 24px;
+  color: #414549; }
+
+.blue__line {
+  border-top: 4px solid #4285f4;
+  text-align: left;
+  padding: 41px 0; }
+
+.news h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -.5px;
+  float: left;
+  color: #424242; }
+
+.news__card {
+  margin-bottom: 32px;
+  display: inline-block;
+  color: #414549; }
+  .news__card--content {
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 120px;
+    line-height: 24px;
+    color: #414549;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; }
+    .news__card--content.featured {
+      -webkit-line-clamp: 5 !important; }
+  .news__card--date {
+    font-size: 16px;
+    color: #5f6368; }
+  .news__card--img {
+    position: relative;
+    margin-top: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .news__card--title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #212121;
+    margin-top: 9px;
+    letter-spacing: .28px; }
+
+.newsletter {
+  position: relative;
+  margin: 14px 0;
+  line-height: 24px;
+  padding: 20px;
+  background: #f1f3f4;
+  border-radius: 2px;
+  width: 100%; }
+  .newsletter--info {
+    width: calc(100% - 80px);
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 16px; }
+    .newsletter--info--slogan {
+      line-height: 24px; }
+    .newsletter--info--link {
+      color: #4285f4; }
+  .newsletter--img {
+    background-image: url(../img/gdlogo.png);
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    display: inline-block; }
+
+.articles {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.article {
+  padding: 32px;
+  float: left;
+  transition: box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 0;
+  margin-right: 0;
+  grid-column-end: span 6;
+  width: 50%; }
+  .article--img {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .article--title {
+    margin-top: 25px;
+    text-align: left;
+    font-size: 24px;
+    line-height: 32px;
+    color: #424242;
+    letter-spacing: .28px; }
+  .article--content {
+    font-size: 14px;
+    line-height: 20px;
+    color: #424242;
+    margin-top: 2px; }
+  .article--url {
+    font-size: .875rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #5f6368;
+    margin-top: 21px;
+    text-transform: capitalize; }
+  .article--quote {
+    border-top: 4px solid #4285f4;
+    margin-top: 0;
+    padding-top: 24px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #424242;
+    letter-spacing: .28px;
+    text-align: left;
+    margin-bottom: 32px; }
+  .article--author .image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    background-size: contain;
+    vertical-align: middle; }
+
+.copy {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #424242;
+  margin-top: 2px;
+  vertical-align: middle; }
+
+@media only screen and (max-width: 500px) {
+  .article {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
