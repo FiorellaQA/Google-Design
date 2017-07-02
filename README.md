@@ -1,6 +1,14 @@
-# Capitan
+# Google Design | Lección 46 - SASS INTERMEDIATE
 
-Ejercicio de la lección 45 | SASS
+Ejercicio finalizado [aquí](https://fiorellaqa.github.io/Google-Design/)
 
-![screenshot](assets/img/desktop.png)
+## Objetivos:
+
+* Desarrollar una página web usando el preprocesador SaSS
+* Usar directivas de control
+* Aplicar funciones propias de SaSS
+
+
+
+
 
